@@ -7,7 +7,7 @@ import "./custom.css";
 const App = () => {
   return (
     <>
-      <div>
+      <div> 
         <Routes />
       </div>
     </>
