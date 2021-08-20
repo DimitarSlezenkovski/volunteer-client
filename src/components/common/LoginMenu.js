@@ -2,13 +2,9 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import GlobalContext from "../../context/GlobalContext";
 import Logout from "./Logout";
-import { useHistory } from "react-router";
-import { Button } from "@material-ui/core";
 
 const LoginMenu = () => {
   const context = useContext(GlobalContext);
-
-  const history = useHistory();
 
   return (
     <div
