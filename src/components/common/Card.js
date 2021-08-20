@@ -53,7 +53,7 @@ const CardVolunteer = (props) => {
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {e.tags.map((e, index) => {
-                  return index == 0 ? e + " | " : e;
+                  return index === 0 ? e + " | " : e;
                 })}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">

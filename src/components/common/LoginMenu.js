@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import GlobalContext from "../../context/GlobalContext";
 import Logout from "./Logout";
-
+/* eslint-disable */
 const LoginMenu = () => {
   const context = useContext(GlobalContext);
 
