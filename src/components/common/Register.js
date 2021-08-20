@@ -1,30 +1,13 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { createTheme } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
-import Search from "../common/Search";
-import { Card } from "../common/Card.js";
-import { ads } from "../../repository/mockData";
 import { Link } from "react-router-dom";
 
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 450,
-      md: 600,
-      lg: 900,
-      xl: 1200,
-      tablet: 1024,
-    },
-  },
-});
 
 const Register = () => {
   return (
     <div
       style={{
-        // height: "100vh",
         width: "100%",
         display: "flex",
         justifyContent: "center",
@@ -107,7 +90,7 @@ const Register = () => {
                     alignItems: "center",
                   }}
                 >
-                  <img
+                  <img alt=""
                     src={require("../../assets/user.svg")}
                     style={{ display: "flex", justifyContent: "flex-start" }}
                   />
@@ -135,7 +118,7 @@ const Register = () => {
                     </p>
                   </div>
                   <div>
-                    <img src={require("../../assets/arrow-right.svg")} />
+                    <img alt="" src={require("../../assets/arrow-right.svg")} />
                   </div>
                 </div>
               </button>
@@ -170,7 +153,7 @@ const Register = () => {
                     alignItems: "center",
                   }}
                 >
-                  <img
+                  <img alt=""
                     src={require("../../assets/organization.svg")}
                     style={{ display: "flex", justifyContent: "flex-start" }}
                   />

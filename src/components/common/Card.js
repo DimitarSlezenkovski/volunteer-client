@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
   CardActionArea,
@@ -8,7 +8,6 @@ import {
   CardMedia,
   Button,
   Typography,
-  useMediaQuery,
   Grid
 } from "@material-ui/core";
 
@@ -30,15 +29,12 @@ const useStyles = makeStyles((theme) => ({
 
 const CardVolunteer = (props) => {
   const classes = useStyles();
-  const theme = useTheme();
 
   const ads = props?.ads;
 
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
-
   return ads.map((e, index) => {
     return (
-      <Grid style={{ display: "flex", justifyContent: "space-around"}}>
+      <Grid style={{ display: "flex", justifyContent: "space-around"}} key={index}>
         <Card 
           style={{
             background: "#F4F4F4",

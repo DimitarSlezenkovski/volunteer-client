@@ -6,8 +6,9 @@ import {
   Checkbox,
   FormControlLabel,
   FormGroup,
-  Button
+  Button,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { createTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 
@@ -179,21 +180,22 @@ const IndividualRegister = () => {
                   label="Се сложувам со условите и правилата за користење"
                 />
               </FormGroup>
-              <Button
-                style={{
-                  borderRadius: 6,
-                  background: "#32C71A",
-                  border: "1px solid #32C71A",
-                  padding: "1vw 10vh 1vw 10vh",
-                  width: "25vw",
-                  color: "white",
-                  textTransform: "capitalize"
-                }}
-                disabled={!agreement && "disabled"}
-                href="/individual/continued"
-              >
-                Продолжи
-              </Button>
+              <Link to={"/individual/continued"}>
+                <Button
+                  style={{
+                    borderRadius: 6,
+                    background: "#32C71A",
+                    border: "1px solid #32C71A",
+                    padding: "1vw 10vh 1vw 10vh",
+                    width: "25vw",
+                    color: "white",
+                    textTransform: "capitalize",
+                  }}
+                  disabled={!agreement && "disabled"}
+                >
+                  Продолжи
+                </Button>
+              </Link>
             </ThemeProvider>
           </Grid>
         </Grid>

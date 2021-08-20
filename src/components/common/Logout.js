@@ -2,7 +2,9 @@ import React from 'react';
 
 const Logout = () => {
     return (
-        null
+        <div>
+            nesto
+        </div>
     )
 }
 

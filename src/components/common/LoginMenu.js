@@ -66,7 +66,7 @@ const LoginMenu = () => {
             </Link>
           </div>
           <div style={{ padding: 10 }}>
-            <img src={require("../../assets/profile.svg")} />
+            <img alt="" src={require("../../assets/profile.svg")} />
           </div>
         </div>
       )}

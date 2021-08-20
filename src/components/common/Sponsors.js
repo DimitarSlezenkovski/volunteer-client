@@ -31,7 +31,7 @@ const Sponsors = () => {
                 <img
                   src={sponsor.imageUrl}
                   alt={sponsor.name}
-                  style={{ width: "15vw", height: "13vh" }}
+                  style={{ width: "15vw", height: "10vh", }}
                 />
               </Link>{" "}
             </CardActionArea>

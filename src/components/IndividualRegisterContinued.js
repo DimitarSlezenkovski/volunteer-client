@@ -3,9 +3,6 @@ import {
   Grid,
   Typography,
   TextField,
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
   Button
 } from "@material-ui/core";
 import { createTheme } from "@material-ui/core";
@@ -166,7 +163,7 @@ const IndividualRegisterContinued = () => {
               >
                 Креирај профил
               </Button>
-              <p><><img src={require("../assets/lock.svg")}/></>Вашите информации се безбедни</p>
+              <p><><img alt="" src={require("../assets/lock.svg")}/></>Вашите информации се безбедни</p>
             </ThemeProvider>
           </Grid>
         </Grid>

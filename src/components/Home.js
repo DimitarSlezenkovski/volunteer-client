@@ -1,26 +1,11 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import Search from "./common/Search";
 import { Card } from "./common/Card.js";
 import { ads } from "../repository/mockData";
 
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 450,
-      md: 600,
-      lg: 900,
-      xl: 1200,
-      tablet: 1024,
-    },
-  },
-});
-
 const Home = () => {
-  // static displayName = Home.name;
 
   return (
     <div style={{ height: "100%", width: "100%" }}>

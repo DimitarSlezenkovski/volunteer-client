@@ -1,24 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Sponsors from "./Sponsors";
 import { Grid } from "@material-ui/core";
 
-const useStyles = makeStyles({
-  root: {
-    display: "flex",
-    justifyContent: "center",
-    width: "100%",
-  },
-});
 
 const Footer = () => {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
 
   return (
     <>
@@ -30,7 +15,7 @@ const Footer = () => {
           background: "#323232",
         }}
       >
-        <div>asd</div>
+        <div style={{ color: "white", fontSize: 18}}>{"Ништо немам направено кај футерот :("}</div>
       </Grid>
     </>
   );

@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import GlobalContext from "./context/GlobalContext";
 import Home from "./components/Home";
 import Register from "./components/common/Register";
 

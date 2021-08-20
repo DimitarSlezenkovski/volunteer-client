@@ -23,7 +23,7 @@ const Search = () => {
         }}
       >
         <SearchBar
-          dataSource={source}
+          dataSource={dataSource}
           onChange={(value) => setDataSource(value)}
           onRequestSearch={() => console.log("onRequestSearch")}
           style={{
