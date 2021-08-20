@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Grid,
   Typography,
@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import { createTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -17,8 +18,6 @@ const theme = createTheme({
 });
 
 const IndividualRegisterContinued = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [agreement, setAgreement] = useState(false);
 
   return (
     <div
@@ -139,7 +138,7 @@ const IndividualRegisterContinued = () => {
                 <TextField
                   required
                   id="outlined-required"
-                  type={showPassword ? "text" : "password"}
+                  type={"text"}
                   label="Град"
                   placeholder="Градот во кој живеете.."
                   variant="outlined"
@@ -149,6 +148,7 @@ const IndividualRegisterContinued = () => {
                   }}
                 />
               </div>
+              <Link to="/">
               <Button
                 style={{
                   borderRadius: 6,
@@ -159,10 +159,10 @@ const IndividualRegisterContinued = () => {
                   color: "white",
                   textTransform: "capitalize"
                 }}
-                disabled={!agreement && "disabled"}
               >
                 Креирај профил
               </Button>
+              </Link>
               <p><><img alt="" src={require("../assets/lock.svg")}/></>Вашите информации се безбедни</p>
             </ThemeProvider>
           </Grid>
