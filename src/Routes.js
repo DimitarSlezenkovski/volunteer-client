@@ -8,6 +8,7 @@ import Register from "./components/common/Register";
 import NavMenu from "./components/common/NavMenu";
 import Footer from "./components/common/Footer";
 import IndividualRegister from "./components/IndividualRegister";
+import IndividualRegisterContinued from "./components/IndividualRegisterContinued";
 
 const theme = createTheme({
   breakpoints: {
@@ -30,6 +31,7 @@ const Routes = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/individual" component={IndividualRegister} />
+        <Route exact path="/individual/continued" component={IndividualRegisterContinued} />
         <Footer />
       </Router>
     </ThemeProvider>

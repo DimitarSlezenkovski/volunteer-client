@@ -190,6 +190,7 @@ const IndividualRegister = () => {
                   textTransform: "capitalize"
                 }}
                 disabled={!agreement && "disabled"}
+                href="/individual/continued"
               >
                 Продолжи
               </Button>
